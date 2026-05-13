@@ -1,0 +1,13 @@
+{
+"$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+"title": { "text": "Number of new donors by age group" },
+"data": {
+"url": "../data/cleaned_blood_donations.csv"
+},
+"mark": "area",
+"encoding": {
+"x": { "field": "Year", "type": "ordinal" },
+"y": { "field": "Total donations", "type": "quantitative" },
+"color": { "field": "Blood type", "type":  "nominal" }
+}
+}

@@ -1,0 +1,12 @@
+{
+"$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+"title": { "text": "Number of new donors by age group" },
+"data": {
+"url": "Age_group/data/age_group.csv"
+},
+"mark": "bar",
+"encoding": {
+"x": { "field": "Age group", "type": "nominal" },
+"y": { "field": "Frequency", "type": "quantitative" }
+}
+}
