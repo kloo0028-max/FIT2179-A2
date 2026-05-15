@@ -1,0 +1,274 @@
+year,State,total_donations
+2006,Johor,8487
+2006,Kedah,30056
+2006,Kelantan,5328
+2006,Kuala Lumpur,133474
+2006,Melaka,6976
+2006,Negeri Sembilan,3887
+2006,Pahang,3258
+2006,Perak,53
+2006,Pulau Pinang,0
+2006,Sabah,2936
+2006,Sarawak,121
+2006,Selangor,3975
+2006,Terengganu,20341
+2007,Johor,6462
+2007,Kedah,27126
+2007,Kelantan,9786
+2007,Kuala Lumpur,145600
+2007,Melaka,24078
+2007,Negeri Sembilan,13284
+2007,Pahang,3237
+2007,Perak,53
+2007,Pulau Pinang,0
+2007,Sabah,12706
+2007,Sarawak,180
+2007,Selangor,18184
+2007,Terengganu,18682
+2008,Johor,9336
+2008,Kedah,42739
+2008,Kelantan,11308
+2008,Kuala Lumpur,155405
+2008,Melaka,26107
+2008,Negeri Sembilan,13723
+2008,Pahang,3140
+2008,Perak,23714
+2008,Pulau Pinang,0
+2008,Sabah,18820
+2008,Sarawak,12532
+2008,Selangor,17769
+2008,Terengganu,13774
+2009,Johor,25702
+2009,Kedah,44862
+2009,Kelantan,11520
+2009,Kuala Lumpur,162692
+2009,Melaka,26653
+2009,Negeri Sembilan,13001
+2009,Pahang,3414
+2009,Perak,26092
+2009,Pulau Pinang,0
+2009,Sabah,19571
+2009,Sarawak,15843
+2009,Selangor,21668
+2009,Terengganu,14262
+2010,Johor,32535
+2010,Kedah,47301
+2010,Kelantan,12607
+2010,Kuala Lumpur,152946
+2010,Melaka,27341
+2010,Negeri Sembilan,14111
+2010,Pahang,3322
+2010,Perak,28340
+2010,Pulau Pinang,0
+2010,Sabah,18483
+2010,Sarawak,16798
+2010,Selangor,24769
+2010,Terengganu,14610
+2011,Johor,32812
+2011,Kedah,53314
+2011,Kelantan,10916
+2011,Kuala Lumpur,160551
+2011,Melaka,27532
+2011,Negeri Sembilan,14498
+2011,Pahang,7458
+2011,Perak,32125
+2011,Pulau Pinang,0
+2011,Sabah,20253
+2011,Sarawak,16542
+2011,Selangor,25947
+2011,Terengganu,14803
+2012,Johor,34180
+2012,Kedah,53664
+2012,Kelantan,9052
+2012,Kuala Lumpur,162027
+2012,Melaka,27807
+2012,Negeri Sembilan,14299
+2012,Pahang,12587
+2012,Perak,33604
+2012,Pulau Pinang,0
+2012,Sabah,21333
+2012,Sarawak,17072
+2012,Selangor,24383
+2012,Terengganu,14718
+2013,Johor,34370
+2013,Kedah,54989
+2013,Kelantan,10351
+2013,Kuala Lumpur,166823
+2013,Melaka,29156
+2013,Negeri Sembilan,15834
+2013,Pahang,11491
+2013,Perak,38515
+2013,Pulau Pinang,0
+2013,Sabah,22326
+2013,Sarawak,19548
+2013,Selangor,22589
+2013,Terengganu,13915
+2014,Johor,35820
+2014,Kedah,57014
+2014,Kelantan,10504
+2014,Kuala Lumpur,175260
+2014,Melaka,28079
+2014,Negeri Sembilan,14785
+2014,Pahang,11550
+2014,Perak,38455
+2014,Pulau Pinang,27069
+2014,Sabah,22507
+2014,Sarawak,28731
+2014,Selangor,24102
+2014,Terengganu,13930
+2015,Johor,36912
+2015,Kedah,59888
+2015,Kelantan,15468
+2015,Kuala Lumpur,183859
+2015,Melaka,28539
+2015,Negeri Sembilan,17011
+2015,Pahang,11677
+2015,Perak,39803
+2015,Pulau Pinang,40913
+2015,Sabah,23781
+2015,Sarawak,37478
+2015,Selangor,25210
+2015,Terengganu,15283
+2016,Johor,30601
+2016,Kedah,58750
+2016,Kelantan,15111
+2016,Kuala Lumpur,180044
+2016,Melaka,29942
+2016,Negeri Sembilan,17955
+2016,Pahang,10995
+2016,Perak,41848
+2016,Pulau Pinang,42515
+2016,Sabah,29269
+2016,Sarawak,35965
+2016,Selangor,24986
+2016,Terengganu,15308
+2017,Johor,34549
+2017,Kedah,61386
+2017,Kelantan,35
+2017,Kuala Lumpur,180602
+2017,Melaka,30233
+2017,Negeri Sembilan,17111
+2017,Pahang,9552
+2017,Perak,41975
+2017,Pulau Pinang,41597
+2017,Sabah,33767
+2017,Sarawak,36617
+2017,Selangor,26016
+2017,Terengganu,15684
+2018,Johor,36684
+2018,Kedah,61869
+2018,Kelantan,14508
+2018,Kuala Lumpur,194026
+2018,Melaka,30170
+2018,Negeri Sembilan,16976
+2018,Pahang,7095
+2018,Perak,44062
+2018,Pulau Pinang,43769
+2018,Sabah,33850
+2018,Sarawak,37290
+2018,Selangor,26932
+2018,Terengganu,17873
+2019,Johor,41261
+2019,Kedah,42506
+2019,Kelantan,11583
+2019,Kuala Lumpur,198506
+2019,Melaka,30233
+2019,Negeri Sembilan,18306
+2019,Pahang,15810
+2019,Perak,41032
+2019,Pulau Pinang,43448
+2019,Sabah,36156
+2019,Sarawak,37567
+2019,Selangor,28065
+2019,Terengganu,16304
+2020,Johor,40705
+2020,Kedah,18876
+2020,Kelantan,12757
+2020,Kuala Lumpur,169941
+2020,Melaka,27536
+2020,Negeri Sembilan,16398
+2020,Pahang,22155
+2020,Perak,40086
+2020,Pulau Pinang,36512
+2020,Sabah,34069
+2020,Sarawak,33960
+2020,Selangor,29234
+2020,Terengganu,15361
+2021,Johor,40409
+2021,Kedah,19946
+2021,Kelantan,12095
+2021,Kuala Lumpur,173967
+2021,Melaka,27956
+2021,Negeri Sembilan,14935
+2021,Pahang,22828
+2021,Perak,43151
+2021,Pulau Pinang,35211
+2021,Sabah,31210
+2021,Sarawak,35783
+2021,Selangor,26094
+2021,Terengganu,16180
+2022,Johor,42832
+2022,Kedah,21128
+2022,Kelantan,15060
+2022,Kuala Lumpur,202413
+2022,Melaka,30510
+2022,Negeri Sembilan,15917
+2022,Pahang,23851
+2022,Perak,46498
+2022,Pulau Pinang,38420
+2022,Sabah,35530
+2022,Sarawak,40129
+2022,Selangor,29313
+2022,Terengganu,18226
+2023,Johor,43706
+2023,Kedah,21564
+2023,Kelantan,16716
+2023,Kuala Lumpur,206288
+2023,Melaka,28445
+2023,Negeri Sembilan,16417
+2023,Pahang,22803
+2023,Perak,46920
+2023,Pulau Pinang,41633
+2023,Sabah,39826
+2023,Sarawak,41593
+2023,Selangor,30132
+2023,Terengganu,19360
+2024,Johor,45764
+2024,Kedah,20815
+2024,Kelantan,18992
+2024,Kuala Lumpur,206856
+2024,Melaka,29387
+2024,Negeri Sembilan,16736
+2024,Pahang,24200
+2024,Perak,46449
+2024,Pulau Pinang,43035
+2024,Sabah,40274
+2024,Sarawak,41861
+2024,Selangor,32151
+2024,Terengganu,20769
+2025,Johor,46673
+2025,Kedah,21610
+2025,Kelantan,19054
+2025,Kuala Lumpur,207084
+2025,Melaka,28845
+2025,Negeri Sembilan,17608
+2025,Pahang,24512
+2025,Perak,46620
+2025,Pulau Pinang,42850
+2025,Sabah,38807
+2025,Sarawak,42246
+2025,Selangor,32546
+2025,Terengganu,21411
+2026,Johor,17948
+2026,Kedah,8618
+2026,Kelantan,7177
+2026,Kuala Lumpur,76841
+2026,Melaka,10143
+2026,Negeri Sembilan,6853
+2026,Pahang,9297
+2026,Perak,17826
+2026,Pulau Pinang,16401
+2026,Sabah,14431
+2026,Sarawak,16129
+2026,Selangor,11118
+2026,Terengganu,8382

@@ -1,0 +1,92 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Blood Donations by State in Malaysia",
+  "width": 700,
+  "height": 450,
+  "params": [
+    {
+      "name": "year_selection",
+      "value": 2006,
+      "bind": {
+        "input": "range",
+        "min": 2006,
+        "max": 2026,
+        "step": 1,
+        "name": "Year: "
+      }
+    }
+  ],
+  "projection": {
+    "type": "equirectangular",
+    "center": [109, 3.8],
+    "scale": 1800
+  },
+  "layer": [
+    {
+      "data": { "sphere": true },
+      "mark": { "type": "geoshape", "fill": "#a8d5e2", "stroke": "none" }
+    },
+    {
+      "data": {
+        "url": "../js/malaysia_map.topojson",
+        "format": { "type": "topojson", "feature": "ne_110m_admin_0_countries" }
+      },
+      "mark": { "type": "geoshape", "fill": "#e8e8e8", "stroke": "#b0b0b0", "strokeWidth": 0.5 }
+    },
+    {
+      "data": {
+        "url": "../js/my.json",
+        "format": { "type": "json", "property": "features" }
+      },
+      "transform": [
+        {
+          "calculate": "'No data for ' + datum.properties.name",
+          "as": "note"
+        }
+      ],
+      "mark": { "type": "geoshape", "fill": "#ddd", "stroke": "white", "strokeWidth": 1 },
+      "encoding": { "tooltip": { "field": "note" } }
+    },
+    {
+      "data": {
+        "url": "../data/blood_donations_state_yearly.csv"
+      },
+      "transform": [
+        { "filter": "datum.year == year_selection" },
+        {
+          "lookup": "State",
+          "from": {
+            "data": {
+              "url": "../js/my.json",
+              "format": { "type": "json", "property": "features" }
+            },
+            "key": "properties.name",
+            "fields": ["type", "geometry", "properties"]
+          },
+          "as": ["type", "geometry", "properties"]
+        },
+        { "filter": "isValid(datum.geometry)" },
+        { "calculate": "year_selection", "as": "selected_year" }
+      ],
+      "mark": { "type": "geoshape", "stroke": "white", "strokeWidth": 0.8 },
+      "encoding": {
+        "shape": { "field": "geometry", "type": "geojson" },
+        "color": {
+          "field": "total_donations",
+          "type": "quantitative",
+          "title": "Total Donations",
+          "scale": { "scheme": "reds" },
+          "legend": { "format": ",.0f" }
+        },
+        "tooltip": [
+          { "field": "State", "type": "nominal", "title": "State" },
+          { "field": "total_donations", "type": "quantitative", "title": "Total Donations", "format": ",.0f" },
+          { "field": "selected_year", "type": "ordinal", "title": "Year" }
+        ]
+      }
+    }
+  ],
+  "config": {
+    "view": { "stroke": "#a8d5e2", "fill": "#a8d5e2" }
+  }
+}

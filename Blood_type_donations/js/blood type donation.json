@@ -1,6 +1,6 @@
 {
 "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-"title": { "text": "Number of new donors by age group" },
+"title": { "text": "Blood donation trends via blood type" },
 "data": {
 "url": "../data/cleaned_blood_donations.csv"
 },
