@@ -1,7 +1,7 @@
 {
 "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
 "title": { "text": "Total number of donations (2006-2026)" },
-"data": {"url": "../data/total_donations_monthly.csv"},
+"data": {"url": "Total_donations/data/total_donations_monthly.csv"},
 "vconcat": [
 {
 "width": 600,

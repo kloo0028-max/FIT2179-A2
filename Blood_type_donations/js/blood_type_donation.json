@@ -2,7 +2,7 @@
 "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
 "title": { "text": "Blood donation trends via blood type" },
 "data": {
-"url": "../data/cleaned_blood_donations.csv"
+"url": "Blood_type_donations/data/cleaned_blood_donations.csv"
 },
 "mark": "area",
 "encoding": {
