@@ -35,7 +35,7 @@
     },
     {
       "data": {
-        "url": "../js/my.json",
+        "url": "Blood_donations_map/js/my.json",
         "format": { "type": "json", "property": "features" }
       },
       "transform": [
