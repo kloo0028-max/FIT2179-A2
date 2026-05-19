@@ -6,7 +6,7 @@
 {
 "width": 600,
 "height": 240,
-"mark": "line",
+"mark": {"type": "line", "color": "#ef4444", "tooltip": true, "point": {"opacity": 0}},
 "encoding": {
 "x": {
     "field": "Month", 
@@ -14,13 +14,17 @@
     "scale": {"domain": {"param": "brush"}},
     "axis": {"title": ""}
     },
-    "y": {"field": "Total donations", "type": "quantitative"}
+    "y": {"field": "Total donations", "type": "quantitative"},
+    "tooltip": [
+    {"field": "Month", "type": "temporal"},
+    {"field": "Total donations", "type": "quantitative"}
+    ]
 }
 },
 {
 "width": 600,
 "height": 60,
-"mark": "line",
+"mark": {"type": "line", "color": "#ef4444", "tooltip": true, "point": {"opacity": 0}},
 "params": [
 {"name": "brush", "select": {"type": "interval",
 "encodings": ["x"]}}

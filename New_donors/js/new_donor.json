@@ -4,9 +4,13 @@
 "data": {
 "url": "New_donors/data/number of new donors.csv"
 },
-"mark": "line",
+"mark": {"type": "line", "color": "#ef4444", "tooltip": true, "point": {"opacity": 0}},
 "encoding": {
 "x": { "field": "Year", "type": "nominal" },
-"y": { "field": "Number of new donors", "type": "quantitative" }
-}
+"y": { "field": "Number of new donors", "type": "quantitative" },
+"tooltip": [
+    {"field": "Year", "type": "nominal"},
+    {"field": "Number of new donors", "type": "quantitative"}
+    ]
+    }
 }

@@ -2,11 +2,22 @@
 "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
 "title": { "text": "Average number of donations per day" },
 "data": {
-"url": "Average_donations_of_the_week/data/avg_donations_by_day.csv"
+    "url": "Average_donations_of_the_week/data/avg_donations_by_day.csv"
 },
 "mark": "bar",
 "encoding": {
-"x": { "field": "Day", "type": "nominal", "sort": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]},
-"y": { "field": "Average donations", "type": "quantitative" }
-}
+    "x": { "field": "Day", "type": "nominal", "sort": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]},
+    "y": { "field": "Average donations", "type": "quantitative" },
+    "color": {
+        "condition": {
+            "test": "datum['Day'] === 'Sunday' || datum['Day'] === 'Saturday'",
+            "value": "#ef4444"
+        },
+    "value": "#4b5563"
+    },
+    "tooltip": [
+        {"field": "Day", "type": "nominal"},
+        {"field": "Average donations", "type": "quantitative"}
+        ]
+    }
 }

@@ -4,7 +4,7 @@
 "data": {
 "url": "Blood_type_donations/data/cleaned_blood_donations.csv"
 },
-"mark": "area",
+"mark": {"type": "area", "line": {"color": "#ef4444" }},
 "encoding": {
 "x": { "field": "Year", "type": "ordinal" },
 "y": { "field": "Total donations", "type": "quantitative" },
