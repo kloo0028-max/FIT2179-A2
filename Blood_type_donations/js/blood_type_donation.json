@@ -1,6 +1,9 @@
 {
 "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
 "title": { "text": "Blood donation trends via blood type" },
+"width": 550,
+"height": 300,
+"padding": 20,
 "data": {
 "url": "Blood_type_donations/data/cleaned_blood_donations.csv"
 },
@@ -8,6 +11,13 @@
 "encoding": {
 "x": { "field": "Year", "type": "ordinal" },
 "y": { "field": "Total donations", "type": "quantitative" },
-"color": { "field": "Blood type", "type":  "nominal" }
+"color": {
+  "field": "Blood type",
+  "type": "nominal",
+  "scale": {
+    "domain": ["a", "b", "ab", "o"],
+    "range": ["#ef4444", "#c2410c", "#fca5a5", "#b91c1c"]
+  }
+}
 }
 }

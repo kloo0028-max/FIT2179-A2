@@ -1,6 +1,9 @@
 {
 "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
 "title": { "text": "Number of new donors (2012-2025)" },
+"width": 580,
+"height": 430,
+"padding": 20,
 "data": {
 "url": "New_donors/data/number of new donors.csv"
 },

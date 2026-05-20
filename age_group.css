@@ -1,0 +1,11 @@
+html, body, h1{
+  margin: 0;
+  padding: 20;
+}
+
+#dashboard {
+  display: grid;
+  grid-template-rows: 60% 40%;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}

@@ -1,11 +1,12 @@
 {
 "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
 "title": { "text": "Total number of donations (2006-2026)" },
+"padding": 20,
 "data": {"url": "Total_donations/data/total_donations_monthly.csv"},
 "vconcat": [
 {
-"width": 600,
-"height": 240,
+"width": 650,
+"height": 280,"padding": 20,
 "mark": {"type": "line", "color": "#ef4444", "tooltip": true, "point": {"opacity": 0}},
 "encoding": {
 "x": {
@@ -22,8 +23,8 @@
 }
 },
 {
-"width": 600,
-"height": 60,
+"width": 650,
+"height": 150,
 "mark": {"type": "line", "color": "#ef4444", "tooltip": true, "point": {"opacity": 0}},
 "params": [
 {"name": "brush", "select": {"type": "interval",

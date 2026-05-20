@@ -1,6 +1,9 @@
 {
 "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
 "title": { "text": "Average number of donations per day" },
+"width": 300,
+"height": 300,
+"padding": 20,
 "data": {
     "url": "Average_donations_of_the_week/data/avg_donations_by_day.csv"
 },
