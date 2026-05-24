@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
-  "description": "A vertical box plot showing median, min, and max body mass of penguins.",
+  "title": { "text": "Monthly Blood Donation Trends (2020–2025)"},
   "data": {"url": "../data/avg_donations_by_day.csv"},
   "mark": {
     "type": "boxplot",

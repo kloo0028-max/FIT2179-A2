@@ -1,0 +1,45 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+   "width": 250,
+  "height": 250,
+  "data": {
+      "url": "../data/avg_donations_by_day.csv"
+  },
+  "title": "Blood Donation Patterns Across Months and Years (2020–2025)",
+  "config": {
+      "view": {
+          "strokeWidth": 0,
+          "step": 13
+      },
+      "axis": {
+          "domain": false
+      }
+  },
+  "mark": "rect",
+  "encoding": {
+      "x": {
+          "field": "Year",
+          "type": "ordinal",
+          "title": "Year",
+          "axis": {
+              "labelAngle": 0
+          }
+      },
+      "y": {
+          "field": "Month_Name",
+          "type": "ordinal",
+          "title": "Month",
+          "sort": ["Jan","Feb","Mar","Apr","May","Jun",
+            "Jul","Aug","Sep","Oct","Nov","Dec"]
+      },
+      "color": {
+          "field": "Total_donations",
+          "type": "quantitative",
+          "scale": {"schema": "reds"},
+          "legend": {
+              "title": "Total donations"
+          }
+      }
+    }
+}
+

@@ -16,7 +16,7 @@
             "test": "datum['Day'] === 'Sunday' || datum['Day'] === 'Saturday'",
             "value": "#ef4444"
         },
-    "value": "#4b5563"
+    "value": "lightgrey"
     },
     "tooltip": [
         {"field": "Day", "type": "nominal"},

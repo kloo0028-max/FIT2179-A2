@@ -16,7 +16,7 @@
       "test": "datum['Age group'] === '17-24'",
       "value": "#ef4444"
       },
-      "value": "#4b5563"
+      "value": "lightgrey"
     },
   "tooltip": [
     {"field": "Age group", "type": "nominal"},

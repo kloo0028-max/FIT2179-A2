@@ -1,0 +1,75 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "description": "Bump chart showing state donation rankings over time",
+  "data": {"url": "bump chart/data/donations_by_state_ranked.csv"},
+  "width": 500,
+  "height": 500,
+  "config": {"clip": false},
+  "layer": [
+    {
+      "mark": {"type": "line", "point": true},
+      "encoding": {
+        "x": {
+          "field": "Year",
+          "type": "ordinal",
+          "title": "Year",
+          "axis": {"labelAngle": 0}
+        },
+        "y": {
+          "field": "Rank",
+          "type": "quantitative",
+          "title": "Rank",
+          "scale": {"reverse": true},
+          "axis": {"tickMinStep": 1, "format": "d"}
+        },
+        "color": {
+          "condition": {
+            "test": "datum.State == 'Kuala Lumpur' || datum.State == 'Johor' || datum.State == 'Perak'",
+            "field": "State",
+            "type": "nominal",
+            "legend": null
+          },
+          "value": "#888888"
+        },
+        "opacity": {
+          "condition": {
+            "test": "datum.State == 'Kuala Lumpur' || datum.State == 'Johor' || datum.State == 'Perak'",
+            "value": 1
+          },
+          "value": 0.5
+        },
+        "tooltip": [
+          {"field": "State", "type": "nominal"},
+          {"field": "Year", "type": "ordinal"},
+          {"field": "Rank", "type": "quantitative"},
+          {"field": "Total donations", "type": "quantitative"}
+        ]
+      }
+    },
+    {
+      "mark": {"type": "text", "align": "left", "dx": 5, "fontSize": 11},
+      "transform": [
+        {"filter": {"field": "Year", "equal": 2026}},
+        {"filter": "datum.State == 'Kuala Lumpur' || datum.State == 'Johor' || datum.State == 'Perak'"}
+      ],
+      "encoding": {
+        "x": {"field": "Year", "type": "ordinal"},
+        "y": {
+          "field": "Rank",
+          "type": "quantitative",
+          "scale": {"reverse": true}
+        },
+        "text": {"field": "State", "type": "nominal"},
+        "color": {
+          "condition": {
+            "test": "datum.State == 'Kuala Lumpur' || datum.State == 'Johor' || datum.State == 'Perak'",
+            "field": "State",
+            "type": "nominal",
+            "legend": null
+          },
+          "value": "#888888"
+        }
+      }
+    }
+  ]
+}

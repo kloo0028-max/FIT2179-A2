@@ -1,7 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": "Blood Donations by State in Malaysia",
-  "width": 1350,
+  "width": 1300,
   "height": 360,
   "padding": 20,
   "params": [
@@ -11,7 +11,7 @@
       "bind": {
         "input": "range",
         "min": 2006,
-        "max": 2026,
+        "max": 2025,
         "step": 1,
         "name": "Year: "
       }
@@ -73,15 +73,19 @@
       "encoding": {
         "shape": { "field": "geometry", "type": "geojson" },
         "color": {
-          "field": "total_donations",
+          "field": "Donations per 100,000",
           "type": "quantitative",
-          "title": "Total Donations",
-          "scale": { "scheme": "reds" },
+          "title": "Donations per 100,000",
+          "scale": {
+            "type": "threshold",
+            "domain": [2000, 4000, 6000, 8000, 10000],
+            "scheme": "reds"
+          },
           "legend": { "format": ",.0f" }
         },
         "tooltip": [
           { "field": "State", "type": "nominal", "title": "State" },
-          { "field": "total_donations", "type": "quantitative", "title": "Total Donations", "format": ",.0f" },
+          { "field": "Donations per 100,000", "type": "quantitative", "title": "Donations per 100,000", "format": ",.0f" },
           { "field": "selected_year", "type": "ordinal", "title": "Year" }
         ]
       }
