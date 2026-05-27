@@ -2,11 +2,13 @@
 "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
 "title": { "text": "Average number of donations per day" },
 "width": 300,
-"height": 300,
+"height": 270,
 "padding": 20,
 "data": {
     "url": "Average_donations_of_the_week/data/avg_donations_by_day.csv"
 },
+"layer": [
+{
 "mark": "bar",
 "encoding": {
     "x": { "field": "Day", "type": "nominal", "sort": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]},
@@ -22,5 +24,19 @@
         {"field": "Day", "type": "nominal"},
         {"field": "Average donations", "type": "quantitative"}
         ]
-    }
+}
+},
+    {
+    "mark": {
+        "type": "text",
+        "align": "left",
+        "fontSize": 11,
+        "lineBreak": "\n"
+    },
+    "encoding": {
+        "x": {"value": 20},
+        "y": {"value": 40},
+        "text": {"value": "The highest average number of donations\nin a week are on the weekends.\nThis indicates that people usually\ndonate their blood during their free time\non the weekend."},
+        "color": {"value": "black"}}
+    }]
 }

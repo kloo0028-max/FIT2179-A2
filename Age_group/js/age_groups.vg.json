@@ -2,12 +2,14 @@
 "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
 "title": { "text": "Number of new donors by age group" },
 "width": 300,
-"height": 300,
+"height": 297,
 "padding": 20,
 "data": {
   "url": "Age_group/data/age_group.csv"
   },
-"mark": "bar",
+"layer": [
+{
+  "mark": "bar",
 "encoding": {
   "x": { "field": "Age group", "type": "nominal" },
   "y": { "field": "Frequency", "type": "quantitative" },
@@ -22,5 +24,20 @@
     {"field": "Age group", "type": "nominal"},
     {"field": "Frequency", "type": "quantitative"}
     ]
-  }
+}
+},
+
+  {
+    "mark": {
+        "type": "text",
+        "align": "left",
+        "fontSize": 11,
+        "lineBreak": "\n"
+    },
+    "encoding": {
+        "x": {"value": 90},
+        "y": {"value": 120},
+        "text": {"value": "The highest number of donors are from\nthe 17-24 age group.\nThis infers that younger people are\nmore fitto donate their blood."},
+        "color": {"value": "black"}}
+    }]
 }

@@ -1,7 +1,7 @@
 {
 "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
 "title": { "text": "Blood donation trends via blood type" },
-"width": 500,
+"width": 520,
 "height": 300,
 "padding": 20,
 "data": {

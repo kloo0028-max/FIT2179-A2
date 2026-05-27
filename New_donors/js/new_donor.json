@@ -1,19 +1,76 @@
 {
-"$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-"title": { "text": "Number of new donors (2012-2025)" },
-"width": 580,
-"height": 430,
-"padding": 20,
-"data": {
-"url": "New_donors/data/number of new donors.csv"
-},
-"mark": {"type": "line", "color": "#ef4444", "tooltip": true, "point": {"opacity": 0}},
-"encoding": {
-"x": { "field": "Year", "type": "nominal" },
-"y": { "field": "Number of new donors", "type": "quantitative" },
-"tooltip": [
-    {"field": "Year", "type": "nominal"},
-    {"field": "Number of new donors", "type": "quantitative"}
-    ]
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {"text": "Number of new donors (2012-2025)"},
+  "width": 605,
+  "height": 457,
+  "padding": 20,
+  "data": {"url": "New_donors/data/number of new donors.csv"},
+  "layer": [
+    {
+      "mark": {"type": "line", "color": "black"},
+      "encoding": {
+        "x": {"field": "Year", "type": "nominal"},
+        "y": {"field": "Number of new donors", "type": "quantitative"},
+        "tooltip": [
+          {"field": "Year", "type": "nominal"},
+          {"field": "Number of new donors", "type": "quantitative"}
+        ]
+      }
+    },
+    {
+      "mark": {"type": "point", "dx": 10,"size": 80, "filled": true},
+      "transform": [
+        {"filter": "datum.Year == '2015' || datum.Year == '2021' || datum.Year == '2025'"}
+      ],
+      "encoding": {
+        "x": {"field": "Year", "type": "nominal"},
+        "y": {"field": "Number of new donors", "type": "quantitative"},
+        "color": {
+          "condition": {"test": "datum.Year == '2015'", "value": "red"},
+          "value": "red"
+        }
+      }
+    },
+    {
+      "mark": {"type": "text", "dx": -45, "fontSize": 11, "fontWeight": "bold"},
+      "transform": [
+        {"filter": "datum.Year == '2015' || datum.Year == '2021' || datum.Year == '2025'"}
+      ],
+      "encoding": {
+        "x": {"field": "Year", "type": "nominal"},
+        "y": {"field": "Number of new donors", "type": "quantitative"},
+        "text": {"field": "Number of new donors", "type": "quantitative", "format": ",.0f"},
+        "color": {
+          "condition": {"test": "datum.Year == '2015'", "value": "red"},
+          "value": "red"
+        }
+      }
+    },
+    {
+    "mark": {
+        "type": "text",
+        "align": "left",
+        "fontSize": 11,
+        "lineBreak": "\n"
+    },
+    "encoding": {
+        "x": {"value": 370},
+        "y": {"value": 120},
+        "text": {"value": "Due to COVID-19 restrictions in 2021,\ndonation centres operated at\nreduced capacity nationwide."},
+        "color": {"value": "black"}}
+    },
+    {
+    "mark": {
+        "type": "text",
+        "align": "left",
+        "fontSize": 11,
+        "lineBreak": "\n"
+    },
+    "encoding": {
+        "x": {"value": 80},
+        "y": {"value": 300},
+        "text": {"value": "The overall trend of the recruitment of \nnew donors shows an overall decline\nover the years"},
+        "color": {"value": "black"}}
     }
+  ]
 }

@@ -1,7 +1,9 @@
 {
-  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": { "text": "Monthly Blood Donation Trends (2020–2025)"},
-  "data": {"url": "../data/avg_donations_by_day.csv"},
+  "width": 300,
+  "height": 250,
+  "data": {"url": "Distribution of Monthly Donations (2020–2025)/data/avg_donations_by_day.csv"},
   "mark": {
     "type": "boxplot",
     "extent": "min-max"
