@@ -1,7 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
-   "width": 350,
-  "height": 250,
+   "width": 570,
+  "height": 298,
   "data": {
       "url": "heatmap/data/avg_donations_by_day.csv"
   },

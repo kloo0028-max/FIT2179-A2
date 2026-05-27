@@ -1,8 +1,8 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {"text": "Number of new donors (2012-2025)"},
-  "width": 605,
-  "height": 457,
+  "width": 570,
+  "height": 250,
   "padding": 20,
   "data": {"url": "New_donors/data/number of new donors.csv"},
   "layer": [
@@ -55,7 +55,7 @@
     },
     "encoding": {
         "x": {"value": 370},
-        "y": {"value": 120},
+        "y": {"value": 50},
         "text": {"value": "Due to COVID-19 restrictions in 2021,\ndonation centres operated at\nreduced capacity nationwide."},
         "color": {"value": "black"}}
     },
@@ -68,7 +68,7 @@
     },
     "encoding": {
         "x": {"value": 80},
-        "y": {"value": 300},
+        "y": {"value": 150},
         "text": {"value": "The overall trend of the recruitment of \nnew donors shows an overall decline\nover the years"},
         "color": {"value": "black"}}
     }

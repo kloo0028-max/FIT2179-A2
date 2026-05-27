@@ -1,7 +1,7 @@
 {
 "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
 "title": { "text": "Number of new donors by age group" },
-"width": 300,
+"width": 360,
 "height": 297,
 "padding": 20,
 "data": {

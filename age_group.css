@@ -1,17 +1,14 @@
-html, body, h1, p{
-  margin: 10;
-  padding: 20;
-  background-color: antiquewhite;
-  width: 100;
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Lato:wght@400;600&display=swap');
+
+h1 {
+  font-family: 'Cinzel', serif;
+  color: #8B0000;
+  font-size: 50px;
 }
 
-
-
-#dashboard {
-  display: grid;
-  grid-template-rows: 60% 40%;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
+h2 {
+  font-family: 'Cinzel', serif;
+  color: #a83232;
 }
 
 
@@ -19,3 +16,24 @@ html, body, h1, p{
     padding: 10px;
     box-sizing: border-box;
 }
+
+#bar_chart_1 {
+    margin-left: 200px;
+}
+
+
+body {
+  background-color: #f5f5f5;
+  padding: 24px;
+  font-family: 'Lato', sans-serif;
+}
+
+.section-box {
+  background: #ffffff;
+  border: 1px solid #d0d0d0;
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 24px;
+}
+
+
