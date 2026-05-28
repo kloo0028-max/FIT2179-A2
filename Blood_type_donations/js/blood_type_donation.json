@@ -1,13 +1,14 @@
 {
 "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
 "title": { "text": "Blood donation trends via blood type" },
-"width": 500,
-"height": 310,
-"padding": 20,
+"width": 530,
+"height": 340,
 "data": {
 "url": "Blood_type_donations/data/cleaned_blood_donations.csv"
 },
-"mark": {"type": "area", "line": {"color": "#ef4444" }},
+"layer": [
+  {
+"mark": {"type": "area", "line": {"color": "#ef4444" }, "tooltip":true},
 "encoding": {
 "x": { "field": "Year", "type": "ordinal" },
 "y": { "field": "Total donations", "type": "quantitative" },
@@ -20,4 +21,21 @@
   }
 }
 }
+  }, 
+  
+  {
+  "mark": {
+        "type": "text",
+        "align": "left",
+        "fontSize": 11,
+        "lineBreak": "\n"
+    },
+    "encoding": {
+        "x": {"value": 10},
+        "y": {"value": 20},
+        "text": {"value": "Blood type O dominates donations across all years,\nfollowed by B, while AB contributes\nthe least overall. "},
+        "color": {"value": "black"}}
+    }
+
+]
 }

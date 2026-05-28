@@ -1,9 +1,8 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": "Blood Donations by State in Malaysia",
-  "width": 750,
+  "width": 790,
   "height": 350,
-  "padding": 20,
   "params": [
     {
       "name": "year_selection",

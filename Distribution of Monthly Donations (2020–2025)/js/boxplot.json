@@ -4,6 +4,8 @@
   "width": 600,
   "height": 340,
   "data": {"url": "Distribution of Monthly Donations (2020–2025)/data/avg_donations_by_day.csv"},
+  "layer": [
+   { 
   "mark": {
     "type": "boxplot",
     "extent": "min-max"
@@ -17,5 +19,21 @@
       "scale": {"zero": false}
     }
   }
+   },
+  {  "mark": {
+        "type": "text",
+        "align": "left",
+        "fontSize": 12,
+        "fontWeight":"lighter",
+        "font": "sans-serif",
+        "lineBreak": "\n"    
+      },
+    "encoding": {
+        "x": {"value": 280},
+        "y": {"value": 270},
+        "text": {"value": "Monthly donations have risen steadily since the pandemic\nlow in 2021, with 2024 and 2025 showing the\nhighest and most consistent volumes yet."},
+        "color": {"value": "black"}}
+    }
+  ]
 }
 

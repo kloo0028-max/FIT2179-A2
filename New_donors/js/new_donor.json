@@ -1,9 +1,9 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {"text": "Number of new donors (2012-2025)"},
-  "width": 570,
-  "height": 250,
-  "padding": 20,
+  "width": 630,
+  "height": 277,
+
   "data": {"url": "New_donors/data/number of new donors.csv"},
   "layer": [
     {
@@ -32,7 +32,7 @@
       }
     },
     {
-      "mark": {"type": "text", "dx": -45, "fontSize": 11, "fontWeight": "bold"},
+      "mark": {"type": "text", "dx": -40, "dy": -5, "fontSize": 11, "fontWeight": "bold"},
       "transform": [
         {"filter": "datum.Year == '2015' || datum.Year == '2021' || datum.Year == '2025'"}
       ],
@@ -44,33 +44,11 @@
           "condition": {"test": "datum.Year == '2015'", "value": "red"},
           "value": "red"
         }
-      }
-    },
-    {
-    "mark": {
-        "type": "text",
-        "align": "left",
-        "fontSize": 11,
-        "lineBreak": "\n"
-    },
-    "encoding": {
-        "x": {"value": 370},
-        "y": {"value": 50},
-        "text": {"value": "Due to COVID-19 restrictions in 2021,\ndonation centres operated at\nreduced capacity nationwide."},
-        "color": {"value": "black"}}
-    },
-    {
-    "mark": {
-        "type": "text",
-        "align": "left",
-        "fontSize": 11,
-        "lineBreak": "\n"
-    },
-    "encoding": {
-        "x": {"value": 80},
-        "y": {"value": 150},
-        "text": {"value": "The overall trend of the recruitment of \nnew donors shows an overall decline\nover the years"},
-        "color": {"value": "black"}}
+      },
+      "tooltip": [
+        {"field": "Year", "type": "nominal"},
+        {"field": "Number of new donors", "type": "quantitative"}
+      ]
     }
   ]
 }
