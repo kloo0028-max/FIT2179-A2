@@ -1,9 +1,9 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "title": { "text": "Malaysian states ranking in donations (2019-2026)"},
+  "title": {"text": "Malaysian states ranking in donations (2019-2026)", "font": "seriff", "fontSize": 15},
   "description": "Bump chart showing state donation rankings over time",
   "data": {"url": "bump chart/data/donations_by_state_ranked.csv"},
-  "width": 1350,
+  "width": 1410,
   "height": 370,
   "layer": [
     {
@@ -27,6 +27,9 @@
             "test": "datum.State == 'Kuala Lumpur' || datum.State == 'Johor' || datum.State == 'Perak'",
             "field": "State",
             "type": "nominal",
+            "scale": {
+              "domain": ["Kuala Lumpur", "Johor", "Perak"],
+              "range": ["#8B0000", "#d4736b", "#a05060"]},
             "legend": null
           },
           "value": "#888888"

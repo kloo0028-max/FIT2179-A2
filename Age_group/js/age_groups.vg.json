@@ -1,6 +1,6 @@
 {
 "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-"title": { "text": "Number of new donors by age group" },
+"title": {"text": "Number of new donors by age group", "font": "seriff", "fontSize": 15},
 "width": 360,
 "height": 320,
 "data": {
@@ -8,7 +8,7 @@
   },
 "mark": "bar",
 "encoding": {
-  "x": { "field": "Age group", "type": "nominal" },
+  "x": { "field": "Age group", "type": "nominal", "axis": {"labelAngle": 0}},
   "y": { "field": "Frequency", "type": "quantitative" },
   "color": {
     "condition": {

@@ -1,11 +1,11 @@
 {
-    "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
-    "width": 570,
+    "$schema":"https://vega.github.io/schema/vega-lite/v6.json",
+    "width": 600,
     "height": 298,
     "data": {
         "url": "heatmap/data/avg_donations_by_day.csv"
     },
-    "title": "Blood Donation Patterns Across Months and Years (2020–2025)",
+    "title":{"text": "Blood Donation Patterns Across Months and Years (2020–2025)", "font": "seriff", "fontSize": 15},
     "config": {
         "view": {
         "strokeWidth": 0,
@@ -35,7 +35,7 @@
     "color": {
         "field": "Total_donations",
         "type": "quantitative",
-        "scale": {"schema": "reds"},
+        "scale": {"scheme": "reds"},
         "legend": {
             "title": "Total donations"
         }

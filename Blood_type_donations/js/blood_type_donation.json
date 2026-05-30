@@ -1,7 +1,7 @@
 {
 "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-"title": { "text": "Blood donation trends via blood type" },
-"width": 530,
+"title": {"text": "Blood donation trends via blood type", "font": "seriff", "fontSize": 15},
+"width": 590,
 "height": 340,
 "data": {
 "url": "Blood_type_donations/data/cleaned_blood_donations.csv"
@@ -10,14 +10,14 @@
   {
 "mark": {"type": "area", "line": {"color": "#ef4444" }, "tooltip":true},
 "encoding": {
-"x": { "field": "Year", "type": "ordinal" },
+"x": { "field": "Year", "type": "ordinal", "axis": {"labelAngle": 0}},
 "y": { "field": "Total donations", "type": "quantitative" },
 "color": {
   "field": "Blood type",
   "type": "nominal",
   "scale": {
-    "domain": ["a", "b", "ab", "o"],
-    "range": ["#ef4444", "#c2410c", "#fca5a5", "#b91c1c"]
+    "domain": ["A", "B", "AB", "O"],
+  "range": ["#8B0000", "#c1440e", "#e07b39", "#7b2d8b"]
   }
 }
 }
@@ -27,13 +27,13 @@
   "mark": {
         "type": "text",
         "align": "left",
-        "fontSize": 11,
+        "fontSize": 13,
         "lineBreak": "\n"
     },
     "encoding": {
         "x": {"value": 10},
         "y": {"value": 20},
-        "text": {"value": "Blood type O dominates donations across all years,\nfollowed by B, while AB contributes\nthe least overall. "},
+        "text": {"value": "Blood type O dominates donations across all years,\nfollowed by B, while AB contributes\nthe least overall."},
         "color": {"value": "black"}}
     }
 

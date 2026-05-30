@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "title": {"text": "Number of new donors (2012-2025)"},
+  "title": {"text": "Number of new donors (2012-2025)", "font":"seriff", "fontSize": 15},
   "width": 630,
   "height": 277,
 
@@ -9,7 +9,7 @@
     {
       "mark": {"type": "line", "color": "black"},
       "encoding": {
-        "x": {"field": "Year", "type": "nominal"},
+        "x": {"field": "Year", "type": "nominal", "axis": {"labelAngle": 0}},
         "y": {"field": "Number of new donors", "type": "quantitative"},
         "tooltip": [
           {"field": "Year", "type": "nominal"},
