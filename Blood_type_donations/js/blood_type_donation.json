@@ -1,8 +1,11 @@
 {
 "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+"usermeta": {"embedOptions": {
+  "renderer": "svg"
+}},
 "title": {"text": "Blood donation trends via blood type", "font": "seriff", "fontSize": 15},
-"width": 590,
-"height": 340,
+"width": 655,
+"height": 290,
 "data": {
 "url": "Blood_type_donations/data/cleaned_blood_donations.csv"
 },
@@ -18,16 +21,23 @@
   "scale": {
     "domain": ["A", "B", "AB", "O"],
   "range": ["#8B0000", "#c1440e", "#e07b39", "#7b2d8b"]
+  },
+  "legend": {
+    "orient": "bottom",
+    "direction": "horizontal",
+    "symbolType": "square",
+    "symbolSize": 150
   }
 }
 }
-  }, 
+}, 
   
   {
   "mark": {
         "type": "text",
         "align": "left",
         "fontSize": 13,
+        "fontWeight":"lighter",
         "lineBreak": "\n"
     },
     "encoding": {

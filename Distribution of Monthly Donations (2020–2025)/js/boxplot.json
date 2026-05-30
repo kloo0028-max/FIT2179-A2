@@ -1,5 +1,8 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "usermeta": {"embedOptions": {
+  "renderer": "svg"
+}},
   "title": {"text": "Monthly Blood Donation Trends (2020–2025)", "font": "seriff", "fontSize": 15},
   "width": 650,
   "height": 340,
@@ -36,8 +39,8 @@
         "lineBreak": "\n"    
       },
     "encoding": {
-        "x": {"value": 580},
-        "y": {"value": 270},
+        "x": {"value": 630},
+        "y": {"value": 290},
         "text": {"value": "Monthly donations have risen steadily since the pandemic\nlow in 2021, with 2024 and 2025 showing the\nhighest and most consistent volumes yet."},
         "color": {"value": "black"}}
     }

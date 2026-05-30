@@ -1,7 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {"text": "Blood Donations by State in Malaysia", "font": "seriff", "fontSize": 15},
-  "width": 890,
+  "width": 920,
   "height": 350,
   "params": [
     {
@@ -74,13 +74,11 @@
         "color": {
           "field": "Donations per 100,000",
           "type": "quantitative",
-          "title": "Donations per 100,000",
+          "title": ["Donations per", "100,000"],
           "scale": {
-            "type": "threshold",
-            "domain": [2000, 4000, 6000, 8000, 10000],
             "scheme": "yelloworangered"
           },
-          "legend": { "format": ",.0f" }
+          "legend": { "format": ",.0f", "gradientLength": 350}
         },
         "tooltip": [
           { "field": "State", "type": "nominal", "title": "State" },

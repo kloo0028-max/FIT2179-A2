@@ -9,7 +9,7 @@
 "mark": {"type": "line", "color": "#ef4444", "tooltip": true, "point": {"opacity": 0}},
 "encoding": {
 "x": {
-    "field": "Month", 
+    "field": "Month/Year", 
     "type": "temporal",
     "scale": {"domain": {"param": "brush"}},
     "axis": {"title": ""}
@@ -30,7 +30,7 @@
 "encodings": ["x"]}}
 ],
 "encoding": {
-"x": {"field": "Month", "type": "temporal"},
+"x": {"field": "Month/Year", "type": "temporal"},
 "y": {
 "field": "Total donations",
 "type": "quantitative",

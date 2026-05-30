@@ -1,8 +1,11 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "usermeta": {"embedOptions": {
+  "renderer": "svg"
+}},
   "title": {"text": "Number of new donors (2012-2025)", "font":"seriff", "fontSize": 15},
   "width": 630,
-  "height": 277,
+  "height": 380,
 
   "data": {"url": "New_donors/data/number of new donors.csv"},
   "layer": [
@@ -49,6 +52,35 @@
         {"field": "Year", "type": "nominal"},
         {"field": "Number of new donors", "type": "quantitative"}
       ]
+    },
+
+    {
+  "mark": {
+        "type": "text",
+        "align": "left",
+        "fontSize": 13,
+        "fontWeight":"lighter",
+        "lineBreak": "\n"
+    },
+    "encoding": {
+        "x": {"value": 20},
+        "y": {"value": 160},
+        "text": {"value": "The overall trend of the recruitment of new donors\nshows an overall decline over the years."},
+        "color": {"value": "black"}}
+    },
+    
+    {"mark": {
+        "type": "text",
+        "align": "right",
+        "fontSize": 13,
+        "fontWeight":"lighter",
+        "lineBreak": "\n"
+    },
+    "encoding": {
+        "x": {"value": 620},
+        "y": {"value": 20},
+        "text": {"value": "It is seen that due to the COVID-19 restrictions in 2021, donation\ncentres operated at reduced capacities nationwide."},
+        "color": {"value": "black"}}
     }
   ]
 }

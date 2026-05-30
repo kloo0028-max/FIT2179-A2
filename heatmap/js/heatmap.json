@@ -1,5 +1,8 @@
 {
     "$schema":"https://vega.github.io/schema/vega-lite/v6.json",
+    "usermeta": {"embedOptions": {
+        "renderer": "svg"
+        }},
     "width": 600,
     "height": 298,
     "data": {
@@ -15,6 +18,8 @@
         "domain": false
     }
     },
+    "layer": [
+    {
     "mark": {"type": "rect", "tooltip":true},
     "encoding": {
     "x": {
@@ -34,12 +39,30 @@
     },
     "color": {
         "field": "Total_donations",
+        "padding": 0,
         "type": "quantitative",
         "scale": {"scheme": "reds"},
         "legend": {
-            "title": "Total donations"
-        }
+            "title": "Total donations",
+            "orient": "bottom",
+            "direction": "horizontal",
+            "gradientLength": 600        }
       }
     }
+}, 
+{"mark": {
+        "type": "text",
+        "align": "left",
+        "fontSize": 15,
+        "fontWeight":"lighter",
+        "lineBreak": "\n",
+        "lineHeight": 25
+    },
+    "encoding": {
+        "x": {"value": 610},
+        "y": {"value": 20},
+        "text": {"value": "Donations in\n2021 showed\nthe lowest\nvolumes\noverall,\nlikely due to\nthe COVID-19\ndisruptions.\nSince 2022, \nvolumes\nhave steadily\nrecovered\nand stabilised."},
+        "color": {"value": "black"}}
+    }]
 }
 
